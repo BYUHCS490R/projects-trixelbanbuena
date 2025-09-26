@@ -1,4 +1,11 @@
 p {
-    color: blue;
+    color: rgb(208, 0, 255);
     font-size: 12pt;
+}
+main h1 {
+    color:rgb(255, 0, 111);
+}
+
+header h1 {
+    color:palevioletred
 }
