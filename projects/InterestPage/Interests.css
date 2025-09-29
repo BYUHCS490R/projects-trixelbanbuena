@@ -1,6 +1,6 @@
 body {
     font-family: Georgia, monospace;   
-    font-size: 15px;
+    font-size: 20px;
     color: rgb(42, 44, 29);                
     background-color: #f8e1d2a3 
 }
@@ -28,10 +28,10 @@ nav span {
 main h2 {
     color: #59111d;
 }
-    main a {
+main a {
     color: #575911;
     }
-    blockquote {
+blockquote {
     color: #591116;
     }
 
