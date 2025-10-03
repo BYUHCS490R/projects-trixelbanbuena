@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fdf8f3;
+}
+
+header {
+    text-align:center;
+    background-color: antiquewhite;
+}
+main {
+    color: #975917
+}
+
+main h2 {
+    color: darkblue;
+}
+.img {
+    border: 2px solid #333
+}
+
+nav {
+    color: rgb(5, 85, 117)
+}
+
+footer {
+    text-align: center;
+}
+
