@@ -1,75 +1,65 @@
 body {
-  font-family: "Courier New", monospace;
-  background-color: #fff7ec; 
-  color: #3c2f2f;
-  margin: 0;
-  line-height: 1.6;
-  background-color: palevioletred;
-  background-repeat: repeat-x; 
-}
-
-body::before {
-  content: "";
-  background-image: url("images/retro-flower.png"); 
+  background-image: url("images/bg.jpeg");
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: right bottom;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 250px;
-  height: 250px;
-  opacity: 0.25;
-  z-index: -1;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: "Georgia", serif;
+  color: #2e1a12;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-  background-color: #ffb347; 
-  color: #2e1a12;
+  background-color: rgba(255, 255, 255, 0.838);
   text-align: center;
-  padding: 1.2em 0;
-  border-bottom: 4px solid #d2691e; 
-  font-family: "Georgia", serif;
-  letter-spacing: 1px;
+  padding: 1.2em;
+  margin: 10px 30px;
+  border-radius: 10px;
+}
+
+header h1 {
+  color: #3b1d0e;
+  border-bottom: 3px solid #b35a1e;
+  padding-bottom: 0.3em;
 }
 
 nav {
-  background-color: #c94c4c; 
+  background-color: rgba(255, 255, 255, 0.743);
   text-align: center;
-  padding: 0.6em 0;
-  border-bottom: 4px solid #8b2e2e;
+  padding: 1.2em;
+  margin: 10px 30px;
+  border-radius: 10px;
 }
 
 nav a {
-  color: #fffbe6;
+  color: #3b1d0e;
   text-decoration: none;
-  padding: 10px 18px;
-  font-weight: bold;
-  font-size: 1em;
+  margin: 0 10px;
+  padding: 6px 10px;
   border-radius: 5px;
-  transition: background-color 0.3s, transform 0.2s;
-  display: inline-block;
-}
-
-nav a:hover {
-  background-color: #ffdd99;
-  color: #4b2e05;
-  transform: scale(1.05);
+  font-weight: bold;
 }
 
 nav a.active {
-  background-color: #ffdd99;
-  color: #3b1d0e;
-  border: 2px solid #a0522d;
+  background-color: rgba(255, 204, 102, 0.8);
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 main {
+  background-color: rgba(255, 255, 255, 0.743);
   text-align: center;
+  padding: 1.2em;
+  margin: 10px 30px;
+  border-radius: 10px;
   padding: 2em;
-  background-color: #fffaf0;
 }
 
-main h2, main h3 {
-  color: #5b3924;
+main h2 {
+  color: #3b1d0e;
   text-transform: uppercase;
   border-bottom: 2px dotted #d2691e;
   display: inline-block;
@@ -83,14 +73,13 @@ p {
   font-size: 1.1em;
 }
 
-img {
-  width: 300px;
-  margin: 10px;
-  border-radius: 12px;
-  border: 5px solid #f7d488; 
-  box-shadow: 3px 3
-}
-
 footer {
-    color:#4b2e05;
+  background-color: rgba(255, 255, 255, 0.743);
+  text-align: center;
+  padding: 1.2em;
+  margin: 10px 30px;
+  border-radius: 10px;
+  color: #3b1d0e;
+  font-style: italic;
+  padding: 1em;
 }
