@@ -1,7 +1,7 @@
 body {
-  background-image: url("images/bgg.jpg"), url();
+  background-image: url("images/bgbrown.jpg"), url();
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-attachment: fixed;
   background-position: center;
   font-family: "Georgia", serif;
@@ -14,12 +14,14 @@ body {
   color: #4b1f04;
   letter-spacing: 2px;
 }
-header { d
-  background-color: rgba(255, 255, 255, 0.838);
+header { 
+  background-color: rgb(255, 255, 255, 0.838);
+  background-image: url("images/air.png");
+  background-position: left;
+  background-repeat: no-repeat;
   text-align: center;
   padding: 1.2em;
   margin: 10px 30px;
-  border-radius: 10px;
 }
 
 header h1 {
@@ -69,6 +71,9 @@ main h2 {
   display: inline-block;
 }
 
+.places {
+  list-style-image: url("images/dot.png")
+}
 p {
   max-width: 700px;
   margin: 0 auto 1em;

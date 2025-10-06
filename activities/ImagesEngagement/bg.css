@@ -1,0 +1,21 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+        color: white;
+        background: url('bgbrown.jpg') rgb(232, 133, 75);
+}
+
+/*dhhd ito yung non repeating image na sinasabi*/
+header {
+    background-image: url('air.png');
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.other {
+    background-image: url("bgbrown.jpg");
+    background-repeat: repeat;
+    background-image: rgb(232, 133, 75);
+}
+
+.mylist {
+    list-style-image: url("dot.png")
+}
