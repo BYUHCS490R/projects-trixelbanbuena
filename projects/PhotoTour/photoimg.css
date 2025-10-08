@@ -1,13 +1,9 @@
 body {
-  background-image: url("images/bgbrown.jpg"), url();
-  background-size: cover;
+  background-image: url("images/bgbrown.jpg");
   background-repeat: repeat;
-  background-attachment: fixed;
-  background-position: center;
-  font-family: "Georgia", serif;
+  font-size: 14pt;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: #2e1a12;
-  margin: 0;
-  padding: 0;
 }
 
 #title {
@@ -20,35 +16,25 @@ header {
   background-position: left;
   background-repeat: no-repeat;
   text-align: center;
-  padding: 1.2em;
-  margin: 10px 30px;
 }
 
 header h1 {
   color: #3b1d0e;
   border-bottom: 3px solid #b35a1e;
-  padding-bottom: 0.3em;
 }
 
 nav {
   background-color: rgba(255, 255, 255, 0.743);
   text-align: center;
-  padding: 1.2em;
-  margin: 10px 30px;
-  border-radius: 10px;
 }
 
 nav a {
   color: #3b1d0e;
-  text-decoration: none;
-  margin: 0 10px;
-  padding: 6px 10px;
-  border-radius: 5px;
   font-weight: bold;
 }
 
 nav a.active {
-  background-color: rgba(255, 204, 102, 0.8);
+  background-color: rgba(248, 171, 171, 0.73);
 }
 
 nav a:hover {
@@ -56,12 +42,8 @@ nav a:hover {
 }
 
 main {
-  background-color: rgba(255, 255, 255, 0.743);
+  background-color: rgba(255, 255, 255, 0.243);
   text-align: center;
-  padding: 1.2em;
-  margin: 10px 30px;
-  border-radius: 10px;
-  padding: 2em;
 }
 
 main h2 {
@@ -72,22 +54,19 @@ main h2 {
 }
 
 .places {
-  list-style-image: url("images/dot.png")
+  list-style-image: url("images/dot.png");
+  list-style-position: inside;
+
 }
 p {
-  max-width: 700px;
-  margin: 0 auto 1em;
   text-align: justify;
   font-size: 1.1em;
 }
 
 footer {
+  font-size: 11pt;
   background-color: rgba(255, 255, 255, 0.743);
-  text-align: center;
-  padding: 1.2em;
-  margin: 10px 30px;
-  border-radius: 10px;
   color: #3b1d0e;
-  font-style: italic;
-  padding: 1em;
+  text-align: center;
 }
+
