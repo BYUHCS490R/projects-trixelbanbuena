@@ -1,0 +1,46 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    background-color: bisque;
+    padding: 25px;
+    border-style: dashed;
+    border-color:black;
+    border-width: 5px;
+    margin: 20px;
+}
+
+header h1{
+    background-color: rgb(255, 145, 0);
+    text-align: center;
+}
+
+nav {
+    border-style: solid;
+    border-color: azure;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-left: 10px;
+}
+
+main h2 {
+    border: thin dashed rgb(255, 0, 225);
+    text-align: center;
+    width: 50%;
+    /*if hindi na kasya yung content sa block*/
+    overflow: scroll;
+}
+
+main p {
+    font-size: 15px;
+    border: thin dotted green;
+    /*short cut, top, right, bottom, left*/
+    padding: 5px 10px 15px 20px;
+    /*short cut, top, right, bottom, left*/
+    margin: 10px, 30px;
+}
+
+.q {
+    color:rgb(189, 37, 37);
+}
