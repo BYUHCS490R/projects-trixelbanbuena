@@ -12,7 +12,7 @@ body {
     background-color: rgb(252, 254, 255);
 }
 
-header {
+.headertitle {
     background-image: url("images/head.jpg");
     background-size: cover;
     background-origin: border-box;
@@ -22,7 +22,7 @@ header {
     text-align: center;
 }
 
-header h1 {
+.title {
     font-family: Impact, sans-serif;
     font-size: 48px;
     text-transform: uppercase;
@@ -32,13 +32,13 @@ header h1 {
     line-height: 1.2;
 }
 
-nav {
+.navigation {
     background-color: rgb(30, 30, 30);
     padding: 0;
     text-align: center;
 }
 
-nav a { 
+.nav-link { 
     display: inline-block;
     padding: 10px;
     background-color: bisque;
@@ -50,11 +50,11 @@ nav a {
     text-transform: uppercase;
 }
 
-nav a:hover {
+.nav-link:hover {
     text-decoration: underline;
 }
 
-main {
+.content-area {
     background-color: white;
     padding: 20px;
     margin: 20px;
@@ -63,7 +63,7 @@ main {
     height: 500px;
 }
 
-main h2 {
+.bodytitle {
     text-align: center;
     font-style: italic;
     text-transform: uppercase;
@@ -71,7 +71,7 @@ main h2 {
     line-height: 1.4;
 }
 
-figure {
+.gameplay-fig {
     float: right;
     width: 300px;
     height: auto;
@@ -82,12 +82,12 @@ figure {
     padding: 5px;
 }
 
-figure img {
+.gameplay-fig img {
     width: 100%;
     height: auto;
 }
 
-figcaption {
+.fig-caption {
     text-align: center;
     font-size: 14px;
     font-style: italic;
@@ -97,7 +97,7 @@ figcaption {
     text-shadow: 1px 1px 2px lightgray;
 }
 
-main p {
+.mycontent {
     font-size: 16px;
     line-height: 0.65cm;
     text-align: justify;
@@ -105,7 +105,7 @@ main p {
     font-weight: normal;
 }
 
-footer {
+.footerdesign {
     background-color: rgb(30, 30, 30);
     color: rgb(212, 115, 24);
     padding: 10px;
