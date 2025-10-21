@@ -1,0 +1,63 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    background-color: rgb(194, 156, 98);
+    color:rgb(255, 255, 255);
+    width: 200px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav a:hover {
+    color: aqua;
+    background-color: rgb(194, 156, 98);
+    text-decoration: underline;
+}
+
+header {
+    color: antiquewhite;
+    font-size: 20px;
+    text-align: center;
+    background-color: black;
+}
+
+main h2 {
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around; 
+    flex-direction: row;  
+    flex-wrap: wrap;         
+    padding:30px;
+}
+
+.card {
+    border: thin solid black;
+    margin: 3px;             
+    border-radius: 3px;
+    box-shadow: 3px 3px 5px rgba(255, 0, 0, 0.669);
+    width: 300px;           
+    text-align: center;
+    background-color: white;
+}
+
+.mainthing {
+    order: -1;
+}
+main {
+    display: block;
+}
