@@ -32,6 +32,10 @@ main h2 {
     margin: 0px;
 }
 
+.sidebar h3 {
+    margin:0;
+}
+
 nav {
     display: flex;
     justify-content: space-evenly;
@@ -44,8 +48,9 @@ nav a {
     text-decoration:dashed;
     color: azure;
 }
+
 .sidebar {
-    width: 200px;
+    width: 600px;
     background-color: bisque;
 }
 

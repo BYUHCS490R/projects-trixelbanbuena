@@ -1,0 +1,125 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: black;
+  color: antiquewhite;
+  text-align: center;
+  padding: 15px;
+}
+header h1 {
+  margin: 0;
+  border: 3px solid antiquewhite;
+  display: inline-block;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: brown;
+}
+
+nav a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+  color: yellow;
+}
+
+.mainrow {
+  display: flex;
+  align-items: flex-start;
+}
+
+.sidebar {
+  width: 25%;
+  background-color: bisque;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.sidebar figure {
+  margin: 0 0 10px 0;
+}
+
+.sidebar img {
+  width: 100%;
+  border: thin solid black;
+}
+.sidebar figcaption {
+  text-align: center;
+  font-style: italic;
+}
+
+
+main {
+  width: 75%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+main h2 {
+  text-align: center;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  border: thin solid black;
+  border-radius: 3px;
+  box-shadow: 3px 3px 5px rgba(236, 62, 62, 0.5);
+  width: 30%;
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+
+
+footer {
+  text-align: center;
+  background-color: rgb(55, 24, 24);
+  color: white;
+  padding: 10px;
+}
+
+
+@media only screen and (max-width: 700px) {
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mainrow {
+    flex-direction: column;
+  }
+
+  main {
+    width: 100%;
+  }
+  .sidebar {
+    width: 100%;
+  }
+
+  .card {
+    width: 90%;
+  }
+}

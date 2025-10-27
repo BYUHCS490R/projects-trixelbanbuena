@@ -3,6 +3,9 @@ body {
     margin: 0px;
 }
 
+.main-row {
+    display: flex;
+}
 
 header {
     background-color: black;
@@ -29,10 +32,14 @@ main h2 {
     margin: 0px;
 }
 
+.sidebar h3 {
+    margin:0;
+}
+
 nav {
     display: flex;
     justify-content: space-evenly;
-    background-color: brown;
+    background-color: rgb(42, 112, 165);
 }
 
 nav a {
@@ -41,17 +48,23 @@ nav a {
     text-decoration:dashed;
     color: azure;
 }
+
+nav a:hover {
+    background-color: rgb(42, 112, 165);
+    color:rgb(197, 123, 27);
+    
+}
+
 .sidebar {
-    width: 200px;
+    width: 600px;
     background-color: bisque;
 }
 
 .card {
     border: thin solid black;
-    box-shadow: 3px 3px 5px rgba(236, 62, 62, 0.742);
+    box-shadow: 3px 3px 5px rgba(62, 117, 236, 0.742);
     width: 45%;
     margin: 10px;
-    box-sizing: border-box;
 }
 
 .card img {
@@ -60,7 +73,7 @@ nav a {
 
 .row {
     display: flex;
-    flex-flow: wrap;
+    flex-flow: row wrap;
     justify-content: space-around;
 }
 
@@ -69,4 +82,26 @@ footer {
     background-color: rgb(55, 24, 24);
     color: rgb(255, 255, 255);
     padding: 7px;
+}
+
+@media ONLY screen AND (max-width:400px) {
+    body {
+        background-color: aqua;
+    }
+
+    nav {
+        flex-direction:column;
+    }
+
+    .main-row {
+        flex-direction: column-reverse;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .main-card {
+        order: -1;
+    }
 }

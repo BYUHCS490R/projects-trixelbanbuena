@@ -1,0 +1,39 @@
+/* Hide parts that don't need printing */
+nav, footer {
+  display: none;
+}
+
+/* Make it printer-friendly */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  background: white;
+  margin: 20px;
+}
+
+header {
+  text-align: center;
+  color: black;
+  background: none;
+  border-bottom: 2px solid black;
+  margin-bottom: 10px;
+}
+
+.sidebar, main {
+  width: 100%;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.card {
+  border: none;
+  box-shadow: none;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}

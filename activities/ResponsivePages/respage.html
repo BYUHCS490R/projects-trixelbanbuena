@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <link rel="stylesheet" href="respage.css" media="screen">
+    <link rel="stylesheet" href="print.css" media="print">
+</head>
+<body>
+    <header>
+        <h1 class="title">Trixia Elbanbuena</h1>
+    </header>
+    <nav>
+        <a href="Link">Link</a>
+        <a href="Link">Link</a>
+        <a href="Link">Link</a>
+        <a href="Link">Link</a>
+    </nav>
+    <div class="main-row">
+        <div class="sidebar">
+            <h3>Side bar</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus pariatur sapiente</p>
+        </div>
+        <main>
+            <h2>Responsive</h2>
+            <div class="row">
+            <article class ="card">
+                <img src="BYUH.jpg" alt="CODM Battle Royal">
+                <h3>1st CARD</h3>
+                <p>information about this picture</p>
+                <a href="More info">More info</a>
+            </article>
+            <article class ="card main-card">
+                <img src="BYUH.jpg" alt="CODM Battle Royal">
+                <h3>2nd CARD</h3>
+                <p>information about this picture</p>
+                <a href="More info">More info</a>
+            </article>
+            <article class ="card">
+                <img src="BYUH.jpg" alt="CODM Battle Royal">
+                <h3>3rd CARD</h3>
+                <p>information about this picture</p>
+                <a href="BYUH.jpg">More info</a>
+            </article>
+            <article class ="card">
+                <img src="BYUH.jpg" alt="CODM Battle Royal">
+                <h3>4th CARD</h3>
+                <p>information about this picture</p>
+                <a href="More info">More info</a>
+            </article>
+        </div>
+            <p>Why do we need a viewport meta tag? <b>It makes a webpage responsive by telling the browser to match the page width to the device’s screen width. Without it, mobile browsers zoom out, making content appear tiny.</b></p>
+            <p>When you select the same tag twice, and in one of them you say "flex-direction: column;" and the other says "flex-direction: row;", which one takes priority? <b>YThe rule that appears later in the CSS (or has higher specificity) takes priority. So if one says column and another row, the later one wins if they have equal specificity.</b></p>
+            <p>How do you change the CSS for a web page displayed on a phone? <b>Use media queries like @media (max-width: 600px) to apply different styles for smaller screens, allowing layouts and text sizes to adjust on mobile devices.</b></p>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2025 Trixia Elbanbuena</p>
+    </footer>
+</body>
+</html>
