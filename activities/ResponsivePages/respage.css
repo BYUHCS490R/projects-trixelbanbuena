@@ -84,7 +84,7 @@ footer {
     padding: 7px;
 }
 
-@media ONLY screen AND (max-width:500px) {
+@media ONLY screen AND (max-width:400px) {
     body {
         background-color: aqua;
     }
