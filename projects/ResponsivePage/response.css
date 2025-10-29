@@ -7,6 +7,7 @@ body {
 
 .main-row {
     display: flex;
+    width: 100%;
 }
 
 header {
@@ -104,6 +105,7 @@ main h2 {
     padding: 10px;
 }
 
+
 .card img {
     width: 100%;
     border: solid #333;
@@ -125,10 +127,13 @@ main h2 {
     border: 1px solid #d4af37;
 }
 
+.card:hover {
+    box-shadow: 0 0 20px 5px rgba(212, 175, 55, 0.6);
+}
+
 .card a:hover {
     background-color: #d4af37;
     color: #000;
-    box-shadow: 0 10px 10px rgba(212, 175, 55, 0.4);
 }
 
 .row {
@@ -152,7 +157,7 @@ footer {
     margin-top: 10px;
 }
 
-@media ONLY screen AND (max-width:500px) {
+@media ONLY screen AND (max-width:600px) {
     body {
         background-color: #1a1a2e;
     }
@@ -173,18 +178,22 @@ footer {
     }
 
     .sidebar {
-        width: 100%;
+        width: auto;
         border-right: none;
         border-top: 3px solid #d4af37;
     }
 
     .card {
-        width: 90%;
+        width: 100%;
     }
 
     .row {
-      justify-content: center;
-      flex-direction: column;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    main {
+        width: 100%;
     }
 
     .main-card {
