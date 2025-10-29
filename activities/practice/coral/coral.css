@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Georgia', 'Courier New', serif;
     margin: 0px;
@@ -5,37 +11,36 @@ body {
     color: #d4d4d4;
 }
 
-.main-row {
-    display: flex;
-}
-
+/* Creepy Header */
 header {
-    background-color: #160a0a;
+    background-color: #0a0a0a;
     color: #d4af37;
     text-align: center;
-    padding: 5px;
-    border-bottom: 5px solid #d4af37;
-    background-image: url('eyebutton.png');
-    background-repeat: repeat;
-    background-position: center;
+    padding: 30px 0;
+    border-bottom: 3px solid #d4af37;
 }
 
 .title {
-    font-size: 45px;
+    font-size: 3em;
     text-shadow: 3px 3px 6px black;
     letter-spacing: 3px;
-    border: thin solid #d4af37;
-    border-width: 0.2cm;
-    padding: 20px;
-    margin: 20px auto;
-    background-color: #00000097;
+    margin: 20px;
 }
 
-header h1 {
-    margin: 0px;
+/* Button Eyes in Header */
+.button-eyes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
 }
 
+.button-img {
+    width: 50px;
+    height: 50px;
+}
 
+/* Navigation */
 nav {
     display: flex;
     justify-content: space-evenly;
@@ -45,8 +50,9 @@ nav {
 }
 
 nav a {
-    text-decoration: none;
+    display: block;
     padding: 12px 20px;
+    text-decoration: none;
     color: #d4af37;
     border: 2px solid #333;
     background-color: #1a1a1a;
@@ -58,55 +64,70 @@ nav a:hover {
     color: #000;
 }
 
-.sidebar {
-    width: 250px;
-    background-color: #0f0f0f;
-    padding: 20px;
-    border-right: 3px solid #d4af37;
-    margin: 0px;
+/* Main Content */
+.main-row {
+    display: flex;
+    min-height: 500px;
 }
-
-.sidebar h3 {
-    color: #d4af37;
-    margin: 0;
-    margin-bottom: 15px;
-    font-size: 22px;
-}
-
-.sidebar-button {
-    width: 100%;
-    display: block;
-    margin: 10px auto;
-}
-
 
 main {
-    padding: 20px;
-    max-width: 80%;
     flex: 1;
+    padding: 20px;
 }
 
 main h2 {
     color: #d4af37;
     text-align: center;
-    font-size: 30px;
-    margin: 0px;
-    margin-bottom: 20px;
+    font-size: 2em;
+    margin: 20px 0;
     text-shadow: 2px 2px 4px black;
 }
 
+/* Sidebar */
+.sidebar {
+    width: 300px;
+    background-color: #0f0f0f;
+    padding: 20px;
+    border-right: 3px solid #d4af37;
+}
+
+.sidebar h3 {
+    color: #d4af37;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.sidebar-button {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 10px auto;
+}
+
+.creepy-text {
+    font-style: italic;
+    color: #8b7314;
+    margin-top: 20px;
+}
+
+/* Cards */
 .card {
     background-color: #0f0f0f;
     border: 2px solid #d4af37;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    width: 250px;
+    width: 45%;
     margin: 10px;
-    padding: 10px;
+    padding: 15px;
+}
+
+.card:hover {
+    box-shadow: 0 10px 25px rgba(212, 175, 55, 0.4);
 }
 
 .card img {
     width: 100%;
-    border: solid #333;
+    filter: brightness(0.8);
+    border: 2px solid #333;
 }
 
 .card h3 {
@@ -115,10 +136,15 @@ main h2 {
     text-align: center;
 }
 
+.card p {
+    color: #b0b0b0;
+    line-height: 1.6;
+}
+
 .card a {
     display: inline-block;
-    margin-top: 8px;
-    padding: 8px;
+    margin-top: 10px;
+    padding: 8px 15px;
     background-color: #1a1a2e;
     color: #d4af37;
     text-decoration: none;
@@ -128,7 +154,6 @@ main h2 {
 .card a:hover {
     background-color: #d4af37;
     color: #000;
-    box-shadow: 0 10px 10px rgba(212, 175, 55, 0.4);
 }
 
 .row {
@@ -137,12 +162,20 @@ main h2 {
     justify-content: space-around;
 }
 
+.story-text {
+    text-align: center;
+    font-style: italic;
+    color: #8b7314;
+    margin: 20px;
+    font-size: 1.2em;
+}
 
+/* Footer */
 footer {
     text-align: center;
     background-color: #0a0a0a;
     color: #d4af37;
-    padding: 7px;
+    padding: 20px;
     border-top: 3px solid #d4af37;
 }
 
@@ -152,9 +185,10 @@ footer {
     margin-top: 10px;
 }
 
-@media ONLY screen AND (max-width:500px) {
+/* Responsive Design */
+@media ONLY screen AND (max-width:600px) {
     body {
-        background-color: #1a1a2e;
+        background-color: #0a0a0a;
     }
 
     nav {
@@ -182,16 +216,20 @@ footer {
         width: 90%;
     }
 
-    .row {
-      justify-content: center;
-      flex-direction: column;
-    }
-
     .main-card {
         order: -1;
     }
 
     .title {
-        font-size: 32px;
+        font-size: 2em;
     }
-  }
+
+    .button-eyes {
+        gap: 20px;
+    }
+
+    .button-img {
+        width: 30px;
+        height: 30px;
+    }
+}

@@ -1,39 +1,24 @@
-/* Hide parts that don't need printing */
 nav, footer {
-  display: none;
+    display: none;
 }
 
-/* Make it printer-friendly */
 body {
-  font-family: 'Times New Roman', Times, serif;
-  color: black;
-  background: white;
-  margin: 20px;
+    color: black;
+    background: white;
+    font-family: Georgia, serif;
 }
 
 header {
-  text-align: center;
-  color: black;
-  background: none;
-  border-bottom: 2px solid black;
-  margin-bottom: 10px;
+    border-bottom: 2px solid black;
 }
 
-.sidebar, main {
-  width: 100%;
-  padding: 0;
-  background: none;
-  border: none;
+.sidebar {
+    border: 1px solid black;
+    background: #f9f9f9;
 }
 
 .card {
-  border: none;
-  box-shadow: none;
-  width: 100%;
-  margin-bottom: 15px;
-}
-
-img {
-  width: 100%;
-  height: auto;
+    border: 1px solid black;
+    background: white;
+    box-shadow: none;
 }
