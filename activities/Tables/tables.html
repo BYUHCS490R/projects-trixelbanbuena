@@ -12,7 +12,7 @@
     </header>
     <main>
         <h1>Tables</h1>
-        <table border="1">
+        <table class="schedule">
             <caption class="caption">My Class Schedule</caption>
             <thead>
                 <tr>
@@ -76,6 +76,8 @@
         <p><b>When do you use a table? </b><em>When you need to show data that’s best understood in rows and columns (like numbers, comparisons, or schedules)</em></p>
         <p><b>When do you not use a table? </b><em>When you’re just arranging text or images for layout or design — use proper formatting or CSS instead.</em></p>
         <p><b>When do you need to do extra work for table accessibility? </b><em>When your table has headers, complex structure, or merged cells — you should add things like header tags (<th>), captions, and ARIA labels so screen readers can understand it</em></p>
+        <p><b>Why don't we use the border attribute? </b> <em>We don’t use the border attribute because it’s outdated. Instead, we use CSS to style borders, which keeps the code cleaner, more flexible, and valid with modern web standards.</em></p>
+        <p><b>What’s the easiest way to color every other row a different color?</b> <em>The easiest way is by using the CSS selector tr:nth-child(even) or tr:nth-child(odd). This automatically applies different background colors to alternating rows without extra code.</em></p>
     </main>
     <footer>
         <p>&copy; 2025 Trixia Elbanbuena</p>
