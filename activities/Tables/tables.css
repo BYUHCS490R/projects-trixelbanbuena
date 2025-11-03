@@ -31,14 +31,14 @@ body {
     background-color: blue;
 }
 
-.schedule th, .schedule td {
+/* .schedule th, .schedule td { */
     /* border: 5px solid black;
     /* padding: 5px;
     height: 30px;
     width: 10px;
     margin: 10px; */
     /* background-color: rgb(224, 234, 231);  */
-}
+
 
 /* .grayed {
     background-color: azure; */
