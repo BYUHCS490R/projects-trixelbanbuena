@@ -1,89 +1,114 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  background-color: #f9f9f9;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    background-image: url("cambg.jpg");
+    background-repeat: no-repeat;       
+    background-size: cover;            
+    background-position: center;           
+    background-color: rgba(31, 31, 31, 0.953);
+    background-blend-mode: overlay; 
 }
 
 header {
-  background-color: #000;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
+    color: #d43f3f; 
+    text-align: center;
+    padding: 15px;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #d43f3f;
 }
 
+
 nav {
-  display: flex;
-  justify-content: space-evenly;
-  background-color: #333;
-  padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+    padding: 10px;
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 8px 15px;
-}
-
-nav a:hover {
-  background-color: #fff;
-  color: #333;
+    color: #540404;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
 }
 
 .main-row {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+main {
+    width: 75%;
+    padding: 20px;
+    flex: 1;
 }
 
 .sidebar {
-  width: 25%;
-  background-color: #eee;
-  padding: 15px;
-  border-left: 3px solid #333;
+    width: 25%;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-left: 4px solid #d43f3f;
+}
+
+.profile-pic {
+    width: 100%;
+    border: 2px solid #d43f3f;
+    border-radius: 5px;
+    margin: 0px;
+}
+
+.sidebar figcaption {
+    font-size: 15px;
+    color: #bfbfbf;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 
-table {
-  width: 80%;
-  border-collapse: collapse;
-  margin: 0 auto;
+.schedule {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 15px 0;
+    background-color: #222;
 }
 
-caption {
-  caption-side: top;
-  font-weight: bold;
-  padding: 10px;
-  font-size: 1.2em;
+.schedule caption {
+    font-weight: bold;
+    color: #d43f3f;
+    margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
-th, td {
-  border: 1px solid #333;
-  text-align: center;
-  padding: 8px;
+.schedule th, .schedule td {
+    border: 1px solid #444;
+    padding: 10px;
+    text-align: center;
 }
 
-thead th {
-  background-color: #000;
-  color: white;
+.schedule thead {
+    background-color: #333;
+    color: #fff;
 }
 
-tbody tr:nth-child(odd) {
-  background-color: #d5b9b9;
+.schedule tbody tr:nth-child(even) {
+    background-color: #2a2a2a;
 }
 
-tbody tr:nth-child(even) {
-  background-color: #fff;
+.schedule tbody tr:nth-child(odd) {
+    background-color: #1f1f1f;
 }
 
-tfoot {
-  background-color: #ddd;
-  font-weight: bold;
+.schedule tfoot {
+    background-color: #d43f3f;
+    color: #fff;
 }
 
 footer {
-  text-align: center;
-  background-color: #333;
-  color: white;
-  padding: 10px;
+    background-color: #121212;
+    color: #d43f3f;
+    text-align: center;
+    padding: 10px;
+    border-top: 3px solid #d43f3f;
 }
