@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>Engagment - Form</h1>
+    </header>
+    <main>
+        <h1>Forms</h1>
+        <form action="formprocess.html" method="post">
+            <div>
+                <label for="fname"> Full Name: </label>
+                <input type="text" name="fullname" placeholder="Full Name" id="fname">
+            </div>
+            <div>
+                <label for="fname"> Email: </label>
+                <input type="email" name="fullname" value="your@email.com" id="fa">
+            </div>
+            <div>
+                <label for="pass">Password:</label>
+                <input type="password" name="pass">
+            </div>
+            <div>
+                <label for="State">State:</label>
+                <select name="State" id="state">
+                    <option value="blank">- - -</option>
+                    <option value="HI" selected>Hawaii</option>
+                    <option value="CA">California</option>
+                    <option value="UT">Utah</option>
+                    <option value="TX">Texas</option>
+                </select>
+            </div>
+            <div>
+                <label><input type="checkbox" value="TRUE"> I agree to the terms and condiitons</label>
+            </div>
+            <div>
+                Gender
+                <label><input type="radio" name="gender" value="male">Male</label>
+                <label><input type="radio" name="gender" value="female">Female</label>
+                <label><input type="radio" name="gender" value="nopreference">Prefer Not to Say</label>
+            </div>
+            <div>
+                <label for="comment">Comments</label>
+                <textarea name="comment" id="comment">Hello 
+                </textarea>
+            </div>
+            <input type="submit" value="Sign Up">
+        </form>
+    </main>
+    <br>
+    <footer>
+        &copy; 2025 Trixia Elbanbuena
+    </footer>
+    <p>
+        <b>1. The form tag has an "action" attribute. What does it do? </b> The action attribute tells the browser where to send the form data when the form is submitted.</em>
+    </p>
+    <p>
+        <b>2. The form tag has a "method" attribute. What does it do?</b> The method attribute tells the browser how to send the form data (GET or POST).
+    </p>
+    <p>
+        <b>3. What is the difference between a "POST" and a "GET"?</b> GET sends data through the URL, while POST sends data securely in the request body.
+    </p>
+</body>
+</html>
