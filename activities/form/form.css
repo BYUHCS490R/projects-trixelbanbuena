@@ -1,3 +1,67 @@
 body {
     background-color: azure;
 }
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.form-row label {
+    width: 150px;
+    text-align: right
+}
+
+.spacer {
+    width: 150px;
+    text-align: right;
+}
+
+.form-row input:not([type='submit']), .form-row select, .form-row textarea {
+    padding: 8px;
+    border-radius: 1cqmin;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(212, 165, 104);
+}
+
+.form-row input:not([type='submit']):focus, .form-row select:focus, .form-row textarea:focus {
+    background-color: aliceblue;
+}
+
+.form-row input[type='submit'] {
+    background-color: rgb(23, 30, 30);
+    color: white;
+    padding: 5px 20px;
+    border-radius:3px;
+    font-size: 15px;
+}
+
+.check-row {
+    display: flex;
+}
+
+legend {
+    font-size: 20px;
+    background-color: rgb(36, 41, 2);
+    padding: 10px;
+    color:white
+}
+
+fieldset {
+    background-color: antiquewhite;
+    margin: auto;
+    width: 80%;
+}
+
+
+@media ONLY screen AND (max-width: 400px) {
+    .form-row, .check-row {
+        flex-direction: column;
+    }
+
+    .form-row label, .spacer {
+        text-align: left;
+    }
+}
+
