@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #ffffff;
+    color: #002a5c;
+}
+
+header {
+    background-color: #5c0000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+main {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+fieldset {
+    border: 2px solid #002a5c;
+    border-radius: 6px;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+legend {
+    font-weight: bold;
+    background-color: #002a5c;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.form-section {
+    margin-bottom: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    gap: 10px;
+}
+
+label {
+    width: 180px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 10px;
+}
+
+input, select, textarea {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #002a5c;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+input:focus, select:focus, textarea:focus {
+    background-color: #eaf4ff;
+    outline: none;
+}
+
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.checkbox-row label {
+    width: auto;
+    font-weight: normal;
+}
+
+input[type="submit"] {
+    background-color: #002a5c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #d64123;
+}
+
+footer {
+    background-color: #5c0000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+    .form-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    label {
+        width: 100%;
+        margin-bottom: 5px;
+        text-align: left;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        font-size: 16px;
+    }
+}

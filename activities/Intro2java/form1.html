@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Club Sign-Up</title>
+    <link rel="stylesheet" href="form1.css">
+</head>
+<body>
+    <header>
+        <h1>Cybersecurity Club Sign-Up</h1>
+    </header>
+    <main>
+        <h2>Join Our Club</h2>
+        <form action="formprocess.html" method="post" class="myform" id="myform">
+            <fieldset>
+                <legend>Member Information</legend>
+                <div class="form-section">
+                    <div class="form-row">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="idnum">BYUH ID Number:</label>
+                        <input type="text" id="idnum" name="idnum" placeholder="Enter your BYUH ID" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">BYUH Email:</label>
+                        <input type="email" id="email" name="email" placeholder="you@go.byuh.edu" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <div class="form-row">
+                        <label for="year">Year Level:</label>
+                        <select id="year" name="year">
+                            <option value="">--Select--</option>
+                            <option>Freshman</option>
+                            <option>Sophomore</option>
+                            <option>Junior</option>
+                            <option>Senior</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label>Interest Area:</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="interest" value="network"> Network Security</label>
+                            <label><input type="radio" name="interest" value="forensics"> Digital Forensics</label>
+                            <label><input type="radio" name="interest" value="policy"> Cyber Policy</label>
+                            <label><input type="radio" name="interest" value="hacking"> Ethical Hacking</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="join-date">Join Date:</label>
+                        <input type="date" id="join-date" name="join-date">
+                    </div>
+                </div>
+                <div class="form-section">
+                    <div class="form-row">
+                        <label for="comments">Why Join:</label>
+                        <textarea id="comments" name="comments" rows="3" placeholder="Tell us why you want to join..."></textarea>
+                    </div>
+
+                    <div class="form-row checkbox-row">
+                        <label><input type="checkbox" name="agree" required> I agree to follow the club's code of ethics.</label>
+                    </div>
+                    <div class="form-row">
+                        <input type="submit" value="Join Now">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    <p><b>What is JavaScript? How did it get its name?</b>It’s a flexible, high-level programming language used mainly to add interactivity to websites. It was renamed “JavaScript” as part of a marketing move to take advantage of Java’s popularity at the time.</p>
+    <p><b>What are two ways you can run JavaScript?</b>You can run it in a web browser or on a server using environments like Node.js.</p>
+    <p><b>What was the most popular front-end JS library?</b>jQuery used to be the dominant front-end library.</p>
+    <p><b>What is the most popular front-end JS library today?</b>React is currently the most widely used front-end library.</p>
+    </main>
+    <footer>
+        <p>&copy; 2025 Trixia Elbanbuena | Cybersecurity Club Treasurer</p>
+    </footer>
+    <script>
+        document.getElementById("myform").addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById("name").value.trim();
+            const idnum = document.getElementById("idnum").value.trim();
+
+            if (!name.includes(" ") || name.split(" ").length < 2) {
+                alert("Please provide your full name (first and last).");
+                return;
+            }
+
+            const idPattern = /^[0-9]{7}$/;
+            if (!idPattern.test(idnum)) {
+                alert("Your BYUH ID must be exactly 7 digits.");
+                return;
+            }
+
+            alert("Form Submitted Successfully!");
+        });
+    </script>
+
+</html>
