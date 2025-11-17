@@ -12,6 +12,10 @@
     </header>
     <main>
         <h2>Join Our Club</h2>
+
+        <!-- This is where the JSON message will appear -->
+        <div id="message"></div>
+
         <form action="formprocess.html" method="post" class="myform" id="myform">
             <fieldset>
                 <legend>Member Information</legend>
@@ -33,6 +37,7 @@
                         <input type="password" id="password" name="password" required>
                     </div>
                 </div>
+
                 <div class="form-section">
                     <div class="form-row">
                         <label for="year">Year Level:</label>
@@ -58,6 +63,7 @@
                         <input type="date" id="join-date" name="join-date">
                     </div>
                 </div>
+
                 <div class="form-section">
                     <div class="form-row">
                         <label for="comments">Why Join:</label>
@@ -65,42 +71,33 @@
                     </div>
 
                     <div class="form-row checkbox-row">
-                        <label><input type="checkbox" name="agree" required> I agree to follow the club's code of ethics.</label>
+                        <label for="agree"></label>
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="agree" name="agree" required>
+                            <label for="agree" class="checkbox-label">
+                                I agree to follow the club's code of ethics.
+                            </label>
+                        </div>
                     </div>
+
                     <div class="form-row">
                         <input type="submit" value="Join Now">
                     </div>
                 </div>
             </fieldset>
         </form>
-    <p><b>What is JavaScript? How did it get its name?</b>It’s a flexible, high-level programming language used mainly to add interactivity to websites. It was renamed “JavaScript” as part of a marketing move to take advantage of Java’s popularity at the time.</p>
-    <p><b>What are two ways you can run JavaScript?</b>You can run it in a web browser or on a server using environments like Node.js.</p>
-    <p><b>What was the most popular front-end JS library?</b>jQuery used to be the dominant front-end library.</p>
-    <p><b>What is the most popular front-end JS library today?</b>React is currently the most widely used front-end library.</p>
+
+        <p><b>What is JavaScript? How did it get its name?</b> It’s a flexible, high-level programming language used mainly to add interactivity to websites. It was renamed “JavaScript” as part of a marketing move to take advantage of Java’s popularity at the time.</p>
+        <p><b>What are two ways you can run JavaScript?</b> You can run it in a web browser or on a server using environments like Node.js.</p>
+        <p><b>What was the most popular front-end JS library?</b> jQuery used to be the dominant front-end library.</p>
+        <p><b>What is the most popular front-end JS library today?</b> React is currently the most widely used front-end library.</p>
+        <p><b>What is AJAX?</b> AJAX stands for Asynchronous JavaScript and XML. It’s a technique that allows a web page to send and receive data from a server in the background without reloading the whole page.</p>
+        <p><b>Why do you put your JS code in a separate file?</b> It keeps code organized and easier to maintain, and the browser can cache the file to improve performance.</p>
     </main>
     <footer>
         <p>&copy; 2025 Trixia Elbanbuena | Cybersecurity Club Treasurer</p>
     </footer>
-    <script>
-        document.getElementById("myform").addEventListener('submit', function(event) {
-            event.preventDefault();
 
-            const name = document.getElementById("name").value.trim();
-            const idnum = document.getElementById("idnum").value.trim();
-
-            if (!name.includes(" ") || name.split(" ").length < 2) {
-                alert("Please provide your full name (first and last).");
-                return;
-            }
-
-            const idPattern = /^[0-9]{7}$/;
-            if (!idPattern.test(idnum)) {
-                alert("Your BYUH ID must be exactly 7 digits.");
-                return;
-            }
-
-            alert("Form Submitted Successfully!");
-        });
-    </script>
-
+    <script src="form.js"></script>
+</body>
 </html>
