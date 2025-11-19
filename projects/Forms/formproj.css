@@ -20,17 +20,6 @@ main {
     padding: 20px;
 }
 
-.success-thanks {
-    display: none;
-    background-color: #d4edda;
-    color: #155724;
-    border: 1px solid #c3e6cb;
-    padding: 15px;
-    border-radius: 5px;
-    text-align: center;
-    margin-top: 20px;
-    font-weight: bold;
-}
 
 fieldset {
     border: 2px solid #002a5c;
