@@ -1,12 +1,12 @@
 document.getElementById('myform').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    const name = document.getElementById('name').value.trim();
-    const idnum = document.getElementById('idnum').value.trim();
-    const email = document.getElementById('email').value.trim();
+    const name = document.getElementById('name').value;
+    const idnum = document.getElementById('idnum').value;
+    const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
     const year = document.getElementById('year').value;
-
+    
     if (!name || !name.includes(' ') || name.split(' ').length < 2) {
         alert('Please provide your full name (first and last).');
         return;
