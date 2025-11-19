@@ -12,7 +12,8 @@
     </header>
     <main>
         <h2>Join Our Club</h2>
-        <form action="formprocess.html" method="post" class="club-form">
+        <div id="message" class="success-thanks"></div>
+        <form action="formprocess.html" method="post" class="myform" id="myform">
             <fieldset>
                 <legend>Member Information</legend>
                 <div class="form-section">
@@ -65,7 +66,13 @@
                     </div>
 
                     <div class="form-row checkbox-row">
-                        <label><input type="checkbox" name="agree" required> I agree to follow the club's code of ethics.</label>
+                        <label for="agree"></label>
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="agree" name="agree" required>
+                            <label for="agree" class="checkbox-label">
+                                I agree to follow the club's code of ethics.
+                            </label>
+                        </div>
                     </div>
                     <div class="form-row">
                         <input type="submit" value="Join Now">
@@ -77,5 +84,7 @@
     <footer>
         <p>&copy; 2025 Trixia Elbanbuena | Cybersecurity Club Treasurer</p>
     </footer>
+
+    <script src="formproj.js"></script>
 </body>
 </html>

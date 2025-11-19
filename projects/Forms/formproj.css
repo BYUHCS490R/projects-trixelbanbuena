@@ -20,6 +20,18 @@ main {
     padding: 20px;
 }
 
+.success-thanks {
+    display: none;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
 fieldset {
     border: 2px solid #002a5c;
     border-radius: 6px;
@@ -74,10 +86,18 @@ input:focus, select:focus, textarea:focus {
     gap: 10px;
 }
 
-.checkbox-row label {
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkbox-label {
     width: auto;
     font-weight: normal;
+    text-align: left;
 }
+
 
 input[type="submit"] {
     background-color: #002a5c;
@@ -101,6 +121,7 @@ footer {
     margin-top: 30px;
 }
 
+
 @media only screen and (max-width: 500px) {
     .form-row {
         flex-direction: column;
@@ -111,6 +132,15 @@ footer {
         width: 100%;
         margin-bottom: 5px;
         text-align: left;
+        padding-right: 0;
+    }
+
+    .checkbox-row > label {
+        display: none;
+    }
+
+    .checkbox-container {
+        width: 100%;
     }
 
     input[type="submit"] {
