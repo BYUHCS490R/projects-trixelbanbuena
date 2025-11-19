@@ -1,43 +1,45 @@
-document.getElementById("myform").addEventListener('submit', function(event) {
+document.getElementById('myform').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    const name = document.getElementById("name").value.trim();
-    const idnum = document.getElementById("idnum").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const password = document.getElementById("password").value;
-    const year = document.getElementById("year").value;
+    const name = document.getElementById('name').value.trim();
+    const idnum = document.getElementById('idnum').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const password = document.getElementById('password').value;
+    const year = document.getElementById('year').value;
 
-    if (!name.includes(" ") || name.split(" ").length < 2) {
-        alert("Please provide your full name (first and last).");
+    if (!name || !name.includes(' ') || name.split(' ').length < 2) {
+        alert('Please provide your full name (first and last).');
         return;
     }
 
-    const idPattern = /^[0-9]{7}$/;
-    if (!idPattern.test(idnum)) {
-        alert("Your BYUH ID must be exactly 7 digits.");
+    if (!idnum || idnum.length !== 7) {
+        alert('Your BYUH ID must be exactly 7 characters long.');
+        return;
+}
+
+    if (!email || !email.endsWith('@go.byuh.edu')) {
+        alert('Please enter a valid BYUH email.');
         return;
     }
 
-    if (!email.endsWith("@go.byuh.edu")) {
-        alert("Please enter a valid BYUH email");
-        return;
-    }
-
-        if (password.length < 6) {
-        alert("Your password must be at least 6 characters.");
+    if (!password || password.length < 6) {
+        alert('Your password must be at least 6 characters.');
         return;
     }
 
     if (!year) {
-        alert("Please select your year level.");
+        alert('Please select your year level.');
         return;
     }
 
-    alert("Form Submitted Successfully!");
+    alert('Form Submitted Successfully!');
 
     const formData = {
         name: name,
-        idnum: idnum
+        idnum: idnum,
+        email: email,
+        password: password,
+        year: year
     };
 
     console.log(formData);
