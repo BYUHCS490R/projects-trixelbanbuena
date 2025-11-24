@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn {
+    display: block;
+    padding: 10px;
+    color:aquamarine;
+    background-color: blue;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: rgb(207, 207, 115);
+}
+#byuhcampus {
+    width: 350px;
+    margin: 30px 50px;
+    border: thin solid black;
+    box-shadow: 5px 5px 5px rgb(114, 109, 109);
+    transform: rotate(8deg)
+}
+
+#byuhcampus img {
+    width: 100%;
+}
