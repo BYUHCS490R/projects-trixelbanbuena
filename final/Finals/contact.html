@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grassroots by GPT | Contact</title>
+    <link rel="stylesheet" href="grassroots.css">
+</head>
+<body>
+<header>
+    <h1 class="title">Grassroots by GPT</h1>
+</header>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="clients.html">Clients</a>
+    <a href="resources.html">Resources</a>
+    <a href="contact.html" class="active">Contact</a>
+</nav>
+<div class="main-row">
+    <aside class="sidebar">
+        <h3>Work With Us</h3>
+        <figure>
+            <img src="contact.png" class="sidebar-image" alt="Contact us">
+            <figcaption>Image source:<a href="https://pixabay.com/illustrations/contact-us-facebook-message-1207797/" target="_blank" rel="noopener">Contact Us!</a></figcaption>
+        </figure>
+        <p>Fill out the form to request support, ask a question, or start a project with Grassroots by GPT.</p>
+        <ul>
+            <li>Quick response within 1 to 2 business days</li>
+            <li>Student friendly and business friendly approach</li>
+            <li>Simple process and clear communication</li>
+        </ul>
+    </aside>
+    <main>
+    <h2>Business Intake Form</h2>
+    <p>Please complete the form below so we can understand your needs and help you get started.</p>
+    <div id="message"></div>
+    <form action="formprocess.html" method="post" class="myform" id="intakeForm">
+        <fieldset class="form-box">
+            <legend>Business Information</legend>
+            <div class="form-section">
+                <div class="form-row">
+                    <label for="bname">Business Name:</label>
+                    <input type="text" id="bname" name="bname" placeholder="Business or shop name" required>
+                </div>
+                <div class="form-row">
+                    <label for="owner">Owner Name:</label>
+                    <input type="text" id="owner" name="owner" placeholder="Full Name" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="your@business.com" required>
+                </div>
+                <div class="form-row">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="xxx-xxx-xxxx">
+                </div>
+            </div>
+            <div class="form-section">
+                <div class="form-row">
+                    <label for="type">Business Type:</label>
+                    <select id="type" name="type">
+                        <option value="">--Select--</option>
+                        <option>Food and Beverage</option>
+                        <option>Retail</option>
+                        <option>Service Based</option>
+                        <option>Online Shop</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label>Services Needed:</label>
+                    <div class="radio-group">
+                        <label><input type="checkbox" name="services" value="content"> Content Creation</label>
+                        <label><input type="checkbox" name="services" value="brand"> Branding Help</label>
+                        <label><input type="checkbox" name="services" value="consult"> Consulting</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Preferred Contact:</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="pref" value="email" required> Email</label>
+                        <label><input type="radio" name="pref" value="phone"> Phone</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="date">Preferred Start Date:</label>
+                    <input type="date" id="date" name="date">
+                </div>
+            </div>
+            <div class="form-section">
+                <div class="form-row">
+                    <label for="goal">Project Goals:</label>
+                    <textarea id="goal" name="goal" rows="3" placeholder="Tell us what you hope to accomplish..."></textarea>
+                </div>
+                <div class="form-row button-row">
+                    <input type="submit" value="Send Request">
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</main>
+</div>
+<footer>
+    <p>&copy; 2025 Grassroots by GPT | Site by Trixia Elbanbuena</p>
+</footer>
+    <script src="client.js"></script>
+</body>
+</html>
