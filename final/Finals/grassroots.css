@@ -23,7 +23,6 @@ header {
     margin: 15px auto;
     background-color: rgba(46, 80, 70, 0.7);
     padding: 15px;
-    line-height: 1.2;
     color: #ffffff;
     font-size: 40px;
     border: thin solid #2e7d32;
@@ -134,7 +133,7 @@ main h2 {
     display: flex;
 }
 
-
+/*para sa home page layout*/
 .card {
     border-radius: 6px;
     box-sizing: border-box;
@@ -180,7 +179,6 @@ main h2 {
     color: #145c3a;
     border-color: #145c3a;
 }
-
 
 .card a.ref-link {
     margin: 0;
@@ -349,13 +347,10 @@ form input[type="submit"]:hover {
     background-color: #eaf6f0;
 }
 
-.bottom-text {
-    margin-top: 12px;
-}
+/*about page. sa text-box nila*/
 
 .team-layout {
     display: flex;
-    align-items: center;
     gap: 40px;
     margin: 0 10px 0 10px;
     padding: 35px 45px;
